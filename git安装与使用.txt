@@ -18,4 +18,7 @@ git使用：
 		_查看历史版本：git log
 		_查看版本提交历史：git reflog
 		_版本回退：git reset --hard HEAD^ {上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100}
-		
+	3.查看工作区，暂存区，版本库的区别
+		git diff 比较的是工作区和暂存区的差别
+		git diff --cached 比较的是暂存区和版本库的差别
+		git diff HEAD 可以查看工作区和版本库的差别
