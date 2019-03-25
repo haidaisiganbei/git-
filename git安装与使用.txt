@@ -40,8 +40,16 @@ git使用：
 		  查看当前分支：git branch
 		  合并分支：git merge dev 
 		  删除分支：git branch -d dev
-		  
-	
+	7.bug分支：
+		遇到临时修改BUG，但是手头工作还没完成时
+		1.保存当前工作状态：git stash
+		2.转到有bug分支：git checkout dev
+		3.创建临时修改bug分支：git branch issue-101
+		4.转到issue-101分支：git checkout issue-101
+			git add ...
+			git commit ...
+		5.查看保存的工作状态列表：git stash list
+		6.回复工作现场：git stash pop
 	
 	
 	
