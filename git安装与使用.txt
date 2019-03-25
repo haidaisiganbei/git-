@@ -1,0 +1,15 @@
+git安装：
+	1.下载：地址https://git-scm.com/downloads
+	2.安装：默认安装
+	3.配置config，用户名和邮箱：
+		进入git bash命令行，输入
+		$ git config --global user.name "Your Name"		
+		$ git config --global user.email "email@example.com"
+git使用：
+	1.创建仓库：
+		_创建目录：
+		_初始化目录：git init
+		_编写文件
+		_把文件添加到仓库：git add fileName
+		_把文件提交到仓库：git commit -m "add some message"
+		
