@@ -23,5 +23,40 @@ git使用：
 		git diff --cached 比较的是暂存区和版本库的差别
 		git diff HEAD 可以查看工作区和版本库的差别
 	4.回复工作区误删文件
-		git checkout --fianName
+		git checkout fianName
+	5.远程仓库：
+		与github通过ssh链接：
+			1.ssh-keygen -t rsa -C "997037734@qq.com" 一路回车创建公钥和私钥
+			2.将公钥id_rsa.pub的内容添加到GitHub的add new ssh key中
+			3.使用：要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+
+			关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+
+			此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+		从远程仓库克隆到本地：git clone
+	分支：创建并切换分支：git chechout -b dev
+		  切换分支：Switched to a new branch 'dev'
+		  
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
