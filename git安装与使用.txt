@@ -55,9 +55,14 @@ git使用：
 			git remote -v
 		2.克隆远程库分支(默认只有master分支)：
 			git clone git@github.com:haidaisiganbei/git-.git
-		3.创建远程origin的dev分支到本地：
-			git checkout -b dev origin/dev
-		
+		3.在本地创建和远程分支对应的分支：
+			git checkout -b branch-name origin/branch-name
+		4.推送本地更新：
+			git push origin branch-name
+		5.拉取远程更新：
+			git pull 
+		6.建立远程与本地分支的关联：
+			git branch --set-upstream-to=origin/<branch> dev
 	
 	
 	
