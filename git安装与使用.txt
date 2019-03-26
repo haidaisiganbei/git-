@@ -49,8 +49,15 @@ git使用：
 			git add ...
 			git commit ...
 		5.查看保存的工作状态列表：git stash list
-		6.回复工作现场：git stash pop
-	
+		6.恢复工作现场：git stash pop
+	8.多人协作：
+		1.查看远程库信息：
+			git remote -v
+		2.克隆远程库分支(默认只有master分支)：
+			git clone git@github.com:haidaisiganbei/git-.git
+		3.创建远程origin的dev分支到本地：
+			git checkout -b dev origin/dev
+		
 	
 	
 	
