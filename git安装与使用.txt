@@ -64,7 +64,9 @@ git使用：
 		6.建立远程与本地分支的关联：
 			git branch --set-upstream-to=origin/<branch> dev
 	
-	
+	9.标签管理
+		与版本发布关联
+	10.
 	
 	
 	
