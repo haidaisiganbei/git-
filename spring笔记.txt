@@ -16,4 +16,30 @@
 			XML引入配置文件
 				引入xml文件：<import resouce="spring-config.xml"
 				引入javaConfig:<bean class="com.demo.config.Config"/>
+	2.高级装配
+		配置profile Bean
+			在java中配置profile
+				@Profile("dev")开发环境
+				@Profile("prod")生产环境
+				激活指定的profile，对应的Bean被创建。没有指定profil的Bean始终会被创建
+			在XML中配置profile
+				使用<beans profile="dev"></beans>
+		激活profile
+			设置spring.profile.active和spring.profile.default的值
+			active的权限大于default
+			多种方式设置
+				作为DispatcherSevlet的初始化参数
+				作为web应用的上下文参数
+				作为JNDI条目
+				作为环境变量
+				作为jvm的系统属性
+				在集成测试类上，使用@ActiveProfiles注解设置
+			例如：在web.xml设置profile为dev
+				<context-param>
+					<param-name>spring.profiles.default</param-name>
+					<param-value>dev</param-value>
+				</context-param>
+		
+			
+			
 二.应用切面（AOP）
