@@ -39,7 +39,25 @@
 					<param-name>spring.profiles.default</param-name>
 					<param-value>dev</param-value>
 				</context-param>
-		
+		条件化bean
+			@Conditional 条件为真时创建bean
+		处理自动装配的歧义性
+			给定的接口有多个实现时，Spring无法确定选择哪个实现，会发生异常，
+			解决办法：
+				1.标识首选的bean
+					java @Primary声明首选bean
+					xml	 <bean primary="true"></bean>
+				2.限定自动装配的bean
+					java @Qualifier("iceCream")
+					使用自定义注解限定
+		bean的作用域
+			单例singleton
+			原型propotype
+			会话session
+			请求request
 			
-			
+			选择作用域：@Scope，scope=""
+		运行时值注入
+			属性占位符
+			Spring表达式语言
 二.应用切面（AOP）
